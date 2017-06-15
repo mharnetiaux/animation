@@ -42,6 +42,12 @@ header {
     background: #1b1e2e;
 }
 
+img.logo {
+    width: 20%;
+    height: auto;
+    padding: 1rem 0 0 1rem;
+}
+
 nav {
     top: 75px;
     max-width: 100%;
