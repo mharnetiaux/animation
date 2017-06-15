@@ -1,0 +1,240 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .1rem;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+button {
+    color: #fff;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+button:hover,
+button:focus {
+    cursor: pointer;
+    outline: none;
+}
+
+header {
+    position: relative;
+    min-height: 75px;
+    background: #1b1e2e;
+}
+
+nav {
+    top: 75px;
+    max-width: 100%;
+    min-height: 1800px;
+    transition: max-width 0.3s;
+    position: fixed;
+    width: 100%;
+    background: #1b1e2e;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+.greeting {
+    background-image: url('../images/bg.jpg');
+    padding: 2rem;
+    min-height: 100px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.top_button {
+    position: absolute;
+    right: 0;
+    border: none;
+    background: #fff;
+    z-index: 1;
+    width: 50px;
+    height: 25px;
+}
+
+.sub_x1 {
+    background-color: #505a8c;
+    color: #fff;
+}
+
+.sub_x1_item {
+    padding: 2rem;
+    border-bottom: 1px solid #1b1e2e;
+}
+
+.sub_x1_item button {
+    width: 63px;
+    font-size: 2.0rem;
+    position: absolute;
+    right: 0;
+}
+
+.sub_x2 {
+    position: absolute;
+    transition: max-width 0.3s;
+    top: 0;
+    max-width: 90%;
+    width: 90%;
+    right: 0;
+    background-color: #002D44;
+    height: 100%;
+    z-index: 1;
+}
+
+.sub_x2_item {
+    padding: 2rem 0;
+    background-color: #505a8c;
+    border-bottom: 1px solid #ccc;
+}
+
+.header {
+    padding-left: 2rem;
+}
+
+.header_sub_menu {
+    padding-left: 3rem;
+}
+
+.has_sub {
+    background-color: #0099CC;
+}
+
+.sub_x3 {
+    overflow: hidden;
+    max-height: 1800px;
+    transition: max-height .1s;
+    color: #fff;
+}
+
+.sub_x3_item {
+    padding: 2rem 0 2rem 4rem;
+}
+
+.sub_x3_item a {
+    font-size: 1.2rem;
+}
+
+.sub_x3_item:last-child {
+    border-bottom: none;
+}
+
+.collapsed-horizontal {
+    overflow: hidden;
+    max-width: 0;
+}
+
+.collapsed-vertical {
+    max-height: 0;
+}
+
+.hamburger {
+    background: none;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    width: 46px;
+    height: 56px;
+    position: absolute;
+    right: 0;
+}
+
+.hamburger:hover,
+.hamburger:focus {
+    outline: none;
+}
+
+.hamburger-inner {
+    display: block;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+    content: "";
+    display: block;
+}
+
+.hamburger-inner::before {
+    top: -10px;
+}
+
+.hamburger-inner::after {
+    bottom: -10px;
+}
+
+.hamburger--squeeze .hamburger-inner {
+    transition-duration: 0.075s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--squeeze .hamburger-inner::before {
+    transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+}
+
+.hamburger--squeeze .hamburger-inner::after {
+    transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--squeeze.is-active .hamburger-inner {
+    transform: rotate(45deg);
+    transition-delay: 0.12s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hamburger--squeeze.is-active .hamburger-inner::before {
+    top: 0;
+    opacity: 0;
+    transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+}
+
+.hamburger--squeeze.is-active .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.arrow_rotate {
+    transform: rotate(90deg);
+    display: inline-block;
+}
+
+.menu_focus {
+    background-color: #FF9933;
+}
