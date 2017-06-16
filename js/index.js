@@ -31,6 +31,7 @@ function toggle_nav(event) {
 function back_home() {
     $(".logo").on("click", function() {
         $(".main_nav").addClass("collapsed-horizontal");
+        $(".hamburger").removeClass("is-active");
     });
 }
 
