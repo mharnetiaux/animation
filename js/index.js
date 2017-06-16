@@ -11,13 +11,19 @@ function toggle_sub_menus() {
 }
 
 function close_nav() {
-    $('html').on('click', function() {
+    function close_action(event) {
         if (!$(event.target).is(".top_button,.sub_button_x3,.sub_button_x1, a")) {
             $(".sub_x2").addClass("collapsed-horizontal");
             $(".sub_x3").addClass("collapsed-vertical");
             $(".sub_button_x3").removeClass("arrow_rotate");
             $(".sub_x1_item").removeClass("menu_focus");
         }
+    }
+
+    $(document).on('click', function(event) {
+        close_action(event);
+    }).on('touchmove touchstart', function(event) {
+        close_action(event);
     });
 }
 
