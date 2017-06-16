@@ -28,8 +28,20 @@ function toggle_nav(event) {
     });
 }
 
-$(document).ready(function() {
+function back_home() {
+    $(".logo").on("click", function() {
+        $(".main_nav").addClass("collapsed-horizontal");
+    });
+}
+
+function menu_actions() {
+    ///come up with a better way
     toggle_nav();
     toggle_sub_menus();
     close_nav();
+    back_home();
+}
+
+$(document).ready(function() {
+    menu_actions();
 });
