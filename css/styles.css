@@ -168,7 +168,7 @@ h1 {
     transition-property: opacity, filter;
     transition-duration: 0.15s;
     transition-timing-function: linear;
-    width: 46px;
+    width: 36px;
     height: 56px;
     position: absolute;
     right: 0;
@@ -186,8 +186,8 @@ h1 {
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
-    width: 30px;
-    height: 4px;
+    width: 25px;
+    height: 3px;
     background-color: #fff;
     border-radius: 4px;
     position: absolute;
