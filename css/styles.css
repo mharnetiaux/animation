@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    background-color: #000;
     color: #fff;
     font-size: 1.4rem;
     padding: 0;
@@ -38,15 +39,17 @@ button:focus {
 
 header {
     position: relative;
-    min-height: 75px;
+    min-height: 8rem;
     background: #1b1e2e;
 }
 
 img.logo {
-    width: 20%;
+    width: 75px;
     height: auto;
-    padding: 1rem 0 0 1rem;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    top: 1rem;
     z-index: 1;
 }
 
@@ -67,7 +70,7 @@ h1 {
 .greeting {
     background-image: url('../images/bg.jpg');
     padding: 2rem;
-    min-height: 100px;
+    min-height: 26vw;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
