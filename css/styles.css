@@ -1,3 +1,8 @@
+@font-face {
+    font-family: star_wars;
+    src: url('../fonts/DISTGRG_.ttf');
+}
+
 html {
     font-size: 62.5%;
 }
@@ -27,6 +32,18 @@ button {
     color: #fff;
     background: none;
     border: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    letter-spacing: .5rem;
+    font-weight: lighter;
+    font-family: 'star_wars';
+    text-align: center;
+    line-height: 2.3rem;
+    font-size: 2rem;
+    color: #ffcc33;
     padding: 0;
     margin: 0;
 }
@@ -239,6 +256,10 @@ h1 {
     bottom: 0;
     transform: rotate(-90deg);
     transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+section {
+    padding: 3rem;
 }
 
 .arrow_rotate {
