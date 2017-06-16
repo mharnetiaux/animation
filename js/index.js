@@ -12,7 +12,7 @@ function toggle_sub_menus() {
 
 function close_nav() {
     function close_action(event) {
-        if (!$(event.target).is(".top_button,.sub_button_x3,.sub_button_x1, a")) {
+        if (!$(event.target).is(".top_button,.sub_button_x3, .sub_button_x1, a")) {
             $(".sub_x2").addClass("collapsed-horizontal");
             $(".sub_x3").addClass("collapsed-vertical");
             $(".sub_button_x3").removeClass("arrow_rotate");
@@ -22,8 +22,10 @@ function close_nav() {
 
     $(document).on('click', function(event) {
         close_action(event);
-    }).on('touchmove touchstart', function(event) {
-        close_action(event);
+    }).on('touchstart', function(event) {
+        if (!$(event.target).is(".sub_x2_item.has_sub, .sub_x3_item")) {
+            close_action(event);
+        }
     });
 }
 

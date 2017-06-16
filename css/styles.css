@@ -122,15 +122,16 @@ h1 {
 }
 
 .sub_x2 {
-    position: absolute;
+    position: fixed;
     transition: max-width 0.3s;
-    top: 0;
+    top: 7.5rem;
     max-width: 90%;
     width: 90%;
     right: 0;
     background-color: #002D44;
     height: 100%;
     z-index: 1;
+    overflow-y: scroll;
 }
 
 .sub_x2_item {
